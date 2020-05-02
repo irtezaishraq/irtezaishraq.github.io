@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+    background: none;
+    color:black;
+}
+
+.header p {
+    font-size: 1.5vw;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 6vw;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-emphasis: bold;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.navbar a {
+    padding-left:0.3vw;
+    padding-right:0.3vw;
+}
+
+.navbar img {
+    width: 5vw;
+    height: 5vw;
+}
