@@ -1,7 +1,6 @@
 body {
     font-family: sans-serif;
     overflow: scroll;
-    background-color: red;
     background-image: linear-gradient(to top right, white, grey);
     color:black;
     height: 100vh;
@@ -22,12 +21,6 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.navbar p {
-    font-size: 8vw;
-    text-align: center;
-    line-height: 0px;
-}
-
 .navbar {
     text-align: center;
     vertical-align: center;
@@ -35,6 +28,13 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100vw;
+}
+
+.navbar p {
+    font-size: 8vw;
+    text-align: center;
+    line-height: 0px;
 }
 
 .navbar a {
