@@ -7,6 +7,11 @@ body {
     width: 100vw;
 }
 
+canvas {
+    width: 100vw;
+    height: 90vh;
+}
+
 .header {
     vertical-align: center;
     width: 100vw;
@@ -33,20 +38,26 @@ body {
 
 .navbar p {
     font-size: 8vw;
-    text-align: center;
     line-height: 0px;
 }
 
+.navbar h4 {
+    font-size: 2vw;
+    font-style: italic;
+    color: black;
+}
+
 .navbar a {
-    padding-left: 1vw;
-    padding-right: 1vw;
+    text-decoration: none;
 }
 
 .navbar img {
     width: 5vw;
-    min-width: 60px;
+    min-width: 55px;
     max-width: 100px;
     height: 5vw;
-    min-height: 60px;
+    min-height: 55px;
     max-height: 100px;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
