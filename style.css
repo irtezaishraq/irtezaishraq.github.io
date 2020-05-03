@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    overflow: scroll;
+    overflow: hidden;
     background-image: linear-gradient(to top right, white, grey);
     color:black;
     height: 100vh;
