@@ -1,4 +1,4 @@
-// Last updated 12/05/20
+// Last updated 13/05/20
 // Pixel manipulation on Canvas
 
 const canvas = document.getElementById('animation')
@@ -24,7 +24,7 @@ image.onload = function(){
     Update();
 }
 
-image.src = "./imgs/icons/favicon.jpg";
+image.src = "./imgs/bg/gradient.jpg";
 
 function fillScreen(img) {
     var scale = Math.max(canvas.width / img.width, canvas.height / img.height);

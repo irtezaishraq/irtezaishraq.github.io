@@ -1,5 +1,5 @@
 // ammended from https://youtu.be/YkPyedMS6s4
-// Last updated 12/05/20
+// Last updated 13/05/20
 const canvas = document.getElementById('animation')
 canvas.width = window.innerWidth
 canvas.height = window.innerHeight

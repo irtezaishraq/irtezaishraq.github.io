@@ -1,4 +1,4 @@
-// Last updated 12/05/20
+// Last updated 13/05/20
 // Individual pix manipulation on 
 
 const canvas = document.getElementById('animation')
@@ -6,12 +6,12 @@ canvas.width = window.innerWidth
 canvas.height = window.innerHeight
 const ctx = canvas.getContext('2d')
 
-const block = canvas.width/4;
-const vel = canvas.height / 1000;
-const nLines = 30;
+const block = canvas.width/6;
+const vel = 5;
+const nLines = 10;
 const lines = [];
 
-var fps = 30;
+var fps = 40;
 var started = Date.now();
 
 var duration = 120; // (seconds)
@@ -29,7 +29,7 @@ image.onload = function(){
     Update();
 }
 
-image.src = "./imgs/icons/favicon.jpg";
+image.src =  "./imgs/bg/gradient.jpg";
 
 function fillScreen(img) {
     var scale = Math.max(canvas.width / img.width, canvas.height / img.height);
@@ -44,7 +44,7 @@ function fuzz(data){
         if (N == 0){
             data[i] *= 1.3; // red
         } else if (N == 1) {
-            data[i + 1] *= 1.2; // green
+            data[i + 1] *= 1.8; // green
         } else {
             data[i + 2] *= 1.4; // blue
         }
@@ -58,6 +58,7 @@ class line {
         this.length = canvas.height;
         this.v = V; // Math.floor(Math.random()*30);
         this.currentY = 0;
+
         this.animate = function () {
             var imageData = ctx.getImageData(this.x, this.currentY, this.width, this.v);
             fuzz(imageData.data);
@@ -68,10 +69,11 @@ class line {
                 return;
             }
         };
+
         this.refresh = function () {
             this.width = Math.ceil(Math.random() * block);
             this.x = Math.ceil(Math.random() * canvas.width) - this.width;
-            this.v = Math.ceil(vel);
+            this.v = Math.ceil(vel*Math.random());
             this.currentY = 0;
         };
     }
@@ -81,7 +83,7 @@ class line {
 for (let i = 0; i < nLines; i++){
     var W = Math.ceil(Math.random()*block);
     var X = Math.ceil(Math.random()*canvas.width)-W;
-    var V = Math.ceil(vel);
+    var V = Math.ceil(vel*Math.random()); // Math.ceil(vel)*Math.ceil(Math.random()*vel);
 
     lines.push(new line(X,W,V));
 }
