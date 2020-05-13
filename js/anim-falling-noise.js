@@ -1,5 +1,5 @@
 // Last updated 13/05/20
-// Individual pix manipulation on 
+// Individual pix manipulation on Canvas
 
 const canvas = document.getElementById('animation')
 canvas.width = window.innerWidth
