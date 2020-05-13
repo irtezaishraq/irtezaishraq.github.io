@@ -1,5 +1,5 @@
 // ammended from https://youtu.be/YkPyedMS6s4
-// Last updated 03/05/20
+// Last updated 12/05/20
 const canvas = document.getElementById('animation')
 canvas.width = window.innerWidth
 canvas.height = window.innerHeight
@@ -35,30 +35,12 @@ function Circle (x,y,r,c) {
         if (this.y - this.r < 0 || this.y + this.r > canvas.height) {
             this.vy = -this.vy;
         }
-        
-        this.vx, this,vy = attractor(this.x,this,y, this.vx, this.vy);
 
         this.x += this.vx;
         this.y += this.vy;
 
         this.draw();
     }
-}
-
-function attractor(x, y, vx, vy) {
-    xr = ((canvas.width/2) - x);
-    yr = ((canvas.length/2) - y);
-    
-    p = 2;
-    r = (xr **p + yr**p)**(1/p); // Minkowski metric
-    theta = Math.atan(xr/yr);
-
-    dvx = (r**(-2))*vx;
-    dvy = (r**(-2))*vy;
-    
-    nvx = vx + dvx;
-    nvy = vy + dvy;
-    return nvx, nvy
 }
 
 const balls = [];
@@ -73,7 +55,6 @@ for (let i = 0; i < n_balls; i++) {
 }
 
 function Update () {
-    // ctx.clearRect(0,0, canvas.width, canvas.height);
     for (let i = 0; i < balls.length; i++) {
         balls[i].animate();
     }
