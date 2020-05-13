@@ -29,7 +29,7 @@ image.onload = function(){
     Update();
 }
 
-image.src =  "./imgs/bg/gradient.jpg";
+image.src =  "./imgs/bg/gradient.JPG";
 
 function fillScreen(img) {
     var scale = Math.max(canvas.width / img.width, canvas.height / img.height);
@@ -53,10 +53,10 @@ function fuzz(data){
 
 class line {
     constructor(X, W, V) {
-        this.x = X; // Math.floor(Math.random()*canvas.width-block);
-        this.width = W; // Math.floor(Math.random()*block);
+        this.x = X; 
+        this.width = W; 
         this.length = canvas.height;
-        this.v = V; // Math.floor(Math.random()*30);
+        this.v = V; 
         this.currentY = 0;
 
         this.animate = function () {
@@ -83,8 +83,7 @@ class line {
 for (let i = 0; i < nLines; i++){
     var W = Math.ceil(Math.random()*block);
     var X = Math.ceil(Math.random()*canvas.width)-W;
-    var V = Math.ceil(vel*Math.random()); // Math.ceil(vel)*Math.ceil(Math.random()*vel);
-
+    var V = Math.ceil(vel*Math.random());
     lines.push(new line(X,W,V));
 }
 
