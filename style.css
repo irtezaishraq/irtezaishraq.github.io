@@ -42,7 +42,7 @@ section::after {
 
 #about {
     height:100%;
-    font-size: calc(10px + 1vw);
+    font-size: calc(10px + 0.7vw);
 }
 
 #profile {
