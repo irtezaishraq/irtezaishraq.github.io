@@ -42,8 +42,8 @@ section::after {
 }
 
 .title {
-    line-height: 0px;
-    font-size: 8vw;
+    /* line-height: 0px; */
+    font-size: 7vw;
     font-family: 'Playfair Display', serif;
     position: relative;
 }
