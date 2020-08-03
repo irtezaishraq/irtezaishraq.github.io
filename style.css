@@ -42,7 +42,7 @@ section::after {
 }
 
 .title {
-    /* line-height: 0px; */
+    margin-bottom: 0em;
     font-size: 7vw;
     font-family: 'Playfair Display', serif;
     position: relative;
