@@ -55,10 +55,11 @@ section::after {
 
 #profile {
     width:35vw;  
-    margin-top: 100px; 
-    margin-bottom: 50px;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 20px;
     margin-left: 22vw;
-    max-width: 350px;
+    max-width: 300px;
     float: left;
     clear: right;
 }
