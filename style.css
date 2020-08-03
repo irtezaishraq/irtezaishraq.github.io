@@ -8,14 +8,14 @@ html, body {
 body {
     font-family: sans-serif;
     /* overflow: hidden; */
-    background-image: linear-gradient(to top right, white, #d3d3d3);
+    /* background-image: linear-gradient(to top right, white, #d3d3d3); */
     color:black;
 }
 
 canvas {
     width: 100vw;
-    height: 98vh;
-    /* vertical-align: center; */
+    height: 100vh;
+    vertical-align: center;
     /* background-color: pink; */
     /* transform: translate(0vw, 1vh); */
 }
@@ -24,17 +24,18 @@ section {
     position: relative;
     width:  100%;
     height: 100%;
+    overflow: hidden;
     /* background-image: linear-gradient(to top right, white, grey); */
 }
 
 section::after {
-  position: absolute;
+  /* position: absolute; */
   /* background-image: linear-gradient(to top right, white, grey); */
   /* bottom: 0;
   left: 0; */
   /* content: ''; */
-  /* width: 100%;
-  height: 100%; */
+  width: 100%;
+  height: 100%;
 }
 
 .gray {
@@ -43,10 +44,11 @@ section::after {
     overflow: hidden;
     width: 60vw;
     height: 100%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     float: right;
     text-align: right;
-    shape-margin: 2%;
+    z-index: -1;
+    /* shape-margin: 2%; */
 }
 
 #about {
