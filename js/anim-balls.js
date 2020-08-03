@@ -47,7 +47,7 @@ const balls = [];
 const colours = ["#da8620", "#da9520","#DAB520","#DAB420","#DAC420", "#C4A21D", "#E1BD33","#DAD320"];
 
 for (let i = 0; i < n_balls; i++) {
-    let r = Math.floor(Math.random()*30) + 15;
+    let r = Math.floor(Math.random()*30) + (canvas.width * 0.04);
     let x = Math.random()*(canvas.width - r*2) + r;
     let y = Math.random()*(canvas.height - r*2) + r;
     let c = colours[Math.floor(Math.random() * colours.length)];
