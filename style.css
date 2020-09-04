@@ -118,7 +118,6 @@ nav a {
     font-family: 'Playfair Display', serif;
     font-size: 5vw;
     color: black;
-    /* display: block; */
     opacity: 0.4;
 }
 
@@ -150,12 +149,10 @@ transition: opacity 0.8s ease-in-out;
     font-size: 2vh;
 }
 
-.page b2 {
+.page h1 {
     font-size: 5vw;
     font-family: 'Playfair Display', serif;
 }
-
-
 
 /********************/
 
