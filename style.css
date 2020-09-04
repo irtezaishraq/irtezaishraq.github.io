@@ -42,14 +42,7 @@ section::after {
     height:100%;
 }
 
-#profile {
-    width:35vw;
-    max-width: 300px;  
-    position: relative;
-    margin-right: 10px;
-    float: left;
-    clear: right;
-}
+
 
 .header {
     vertical-align: center;
@@ -152,6 +145,15 @@ transition: opacity 0.8s ease-in-out;
 .page h1 {
     font-size: 5vw;
     font-family: 'Playfair Display', serif;
+}
+
+#profile {
+    width:35vw;
+    max-width: 300px;  
+    position: relative;
+    margin-right: 10px;
+    float: left;
+    clear: right;
 }
 
 /********************/
